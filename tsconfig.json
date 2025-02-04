@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                           // Set the target JavaScript version
+    "module": "ESNext",                            // Set module system (you can change it to "commonjs" if needed)
+    "moduleResolution": "node",                    // Module resolution strategy for Node.js
+    "strict": true,                                // Enable strict type-checking
+    "noEmit": true,                                // Don't generate output files, useful for development
+    "esModuleInterop": true,                       // Allow default imports from non-ES modules
+    "skipLibCheck": true,                          // Skip type checking of declaration files for better performance
+    "forceConsistentCasingInFileNames": true,      // Enforce consistent casing for filenames
+    "resolveJsonModule": true                      // Allow importing JSON files
+  },
+  "include": [
+    "src/**/*.ts"                                  // Specify TypeScript files to be included
+  ]
+}
