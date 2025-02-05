@@ -12,5 +12,5 @@
   },
   "include": [
     "src/**/*.ts"                                  // Specify TypeScript files to be included
-  ]
+, "main.ts"  ]
 }
