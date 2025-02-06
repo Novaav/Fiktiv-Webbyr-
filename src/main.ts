@@ -1,3 +1,7 @@
+/// <reference types="vite/client" />
+
+
+
 import { createHeader } from "./ts/header";
 import { createFooter } from "./ts/footer";
 

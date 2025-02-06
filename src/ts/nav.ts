@@ -1,4 +1,3 @@
-// nav.ts
 export function createNavbar(): HTMLElement {
     const nav = document.createElement("nav");
     nav.classList.add("navbar");
@@ -23,14 +22,7 @@ export function createNavbar(): HTMLElement {
         a.href = link.url;
         a.textContent = link.text;
 
-        // Om samma länk klickas, ladda om sidan
-        a.addEventListener("click", (event) => {
-            if (window.location.pathname.endsWith(link.url)) {
-                event.preventDefault(); // Förhindra standardnavigation
-                window.location.reload(); // Ladda om sidan
-            }
-        });
-
+        // No need to reload the page, just let the link work
         li.appendChild(a);
         ul.appendChild(li);
     });
