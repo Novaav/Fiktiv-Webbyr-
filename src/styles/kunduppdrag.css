@@ -1,22 +1,24 @@
-
-
-
-.page-header {
+/* ==========================
+   🏗️ KUNDUPPDRAG SIDSTYLING
+   ========================== */
+   .page-header {
     text-align: center;
     padding: 50px 0; 
     background-color: #ffffff;
     color: #000000;
 }
 
-.page-header h1 {
-    font-size: 3rem;
-    margin: 0 auto;
-}
 
-
+/* ==========================
+   🎨 KUNDUPPDRAG-SEKTION
+   ========================== */
 .client-showcase {
     background-color: #fff;
     padding: 50px 0;
+    text-align: center;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 .container {
@@ -27,8 +29,8 @@
     flex-wrap: wrap;
     justify-content: flex-start; 
     gap: 0; 
+   
 }
-
 
 .client-card {
     width: 25vw;
@@ -40,13 +42,12 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
 .client-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-
+/* 🔥 Hover-effekt: Bilder blir suddiga och text syns */
 .client-title {
     position: absolute;
     top: 50%;
@@ -63,7 +64,6 @@
     opacity: 1; 
 }
 
-
 .client-card img {
     display: block; 
     width: 100%; 
@@ -74,19 +74,20 @@
     margin-bottom: 0;
 }
 
-
 .client-card:hover img {
     filter: blur(4px);
 }
 
-
+/* Textstorlek och styling för kort */
 .client-card h3 {
     font-size: 3rem;
     margin: 10px 0;
     color: #ffffff;
 }
 
-
+/* ==========================
+   📱 RESPONSIV DESIGN
+   ========================== */
 @media (max-width: 1024px) {
     .client-card {
         width: 25vw; 
@@ -108,8 +109,9 @@
     }
 }
 
-
-/* Gradient bakgrunds animation (: */
+/* ==========================
+   🌈 ANIMERAD BAKGRUND
+   ========================== */
 body {
     margin: 0;
     padding: 0;
@@ -118,7 +120,6 @@ body {
     background-size: 400% 400%; 
     animation: gradientBackground 10s ease infinite; 
 }
-
 
 @keyframes gradientBackground {
     0% {
@@ -131,5 +132,3 @@ body {
         background-position: 0% 50%;
     }
 }
-
-
