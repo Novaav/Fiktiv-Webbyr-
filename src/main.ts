@@ -1,4 +1,4 @@
-import './js/kunduppdrag.ts';
+import './ts/kunduppdrag.js';
 
 
 
