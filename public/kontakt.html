@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kundtjänst och Support</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/src/css/main.css">
+</head>
+<body>
+    <section class="hero">
+            <h1>Kundtjänst och support</h1>
+        </div>
+    </section>
+    <section class="info">
+        <div class="info-box">
+            <i class="fas fa-clock fa-3x"></i>
+            <h2 class="title">Våra öppettider</h2>
+            <p>Kontorstider kl 8-17</p>
+        </div>
+        <div class="info-box">
+            <i class="fas fa-phone fa-3x"></i>
+            <h2 class="title">Kontaktuppgifter</h2>
+            <p>Ring vår växel på <span class="phone">012 345 67 89</span></p>
+        </div>
+        <div class="info-box">
+            <i class="fas fa-cogs fa-3x"></i>
+            <h2 class="title">Driftstatus</h2>
+            <p id="status">Inga noterade störningar.</p>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <h1>Kontakta oss</h1>
+        <form id="contactForm">
+            <label for="name">Namn:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-post:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Meddelande:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Skicka</button>
+        </form>
+        <p id="formMessage"></p>
+    </section>
+
+    <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
