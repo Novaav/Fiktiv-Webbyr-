@@ -94,4 +94,38 @@ La till en ny sektion för att kunder ska kunna kontakta oss direkt via webbsida
 - Använd **Git Flow** med `main` och `develop`
 - Följ commit-konventioner (`feat:`, `fix:`, osv.)
 - Skapa PRs med tydliga beskrivningar och tagga reviewers
+- 
+
+
+
+---
+
+## Våra resultat under processen
+Nedan beskriver vi om något i processen behöver kanske förtydligas lite extra.
+
+## Versionshantering och Arbetsflöde
+
+Vi har arbetat enligt Git-flow där vi har:
+- Skapat feature-branches för nya funktioner.
+- Mergeat kod via pull requests till `develop`.
+- Använt separata branches för bugfixar och hotfixes.
+- Löste merge-konflikter manuellt vid behov.
+
+### Hotfixes
+För att snabbt fixa kritiska buggar skapade vi en **hotfix-branch** direkt från `main`. Vi löste problemet, testade och mergeade tillbaka till `main` och `develop`.
+
+**Exempel:**
+```sh
+git checkout main
+git pull origin main
+git checkout -b hotfix-fix-header
+# Fixar buggen i koden...
+git add .
+git commit -m "Hotfix: Fixar header.ts för en bugg"
+git checkout main
+git merge hotfix-fix-header
+git checkout develop
+git merge hotfix-fix-header
+git push origin main develop
+
 
