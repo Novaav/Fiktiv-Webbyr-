@@ -11,7 +11,7 @@ export default defineConfig({
         kunduppdrag: './kunduppdrag.html', 
         kontakt: './kontakt.html',
         omoss: './omoss.html',
-        våratjänster: './våratjänster.html', // Add other HTML files here
+        våratjänster: './varatjanster.html', // kan lääga till andra html filer här
       },
     },
   },

@@ -10,12 +10,13 @@ export function createNavbar(): HTMLElement {
     ul.classList.add("nav-list");
 
     const links = [
-        { text: "Hem", url: "/src/pages/index.html" },
-        { text: "Kontakt", url: "/src/pages/kontakt.html" },
-        { text: "Kunduppdrag", url: "/public/kunduppdrag.html" },
-        { text: "Om oss", url: "/src/pages/omoss.html" },
-        { text: "Våra Tjänster", url: "/public/varatjanster.html" }
+        { text: "Hem", url: "/index.html" },
+        { text: "Kontakt", url: "/kontakt.html" },
+        { text: "Kunduppdrag", url: "/kunduppdrag.html" },
+        { text: "Om oss", url: "/omoss.html" },
+        { text: "Våra Tjänster", url: "/varatjanster.html" }
     ];
+    
     
     links.forEach(link => {
         const li = document.createElement("li");
