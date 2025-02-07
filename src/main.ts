@@ -136,7 +136,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const contentWrapper = document.createElement("div");
     contentWrapper.classList.add("content-wrapper");
     root.appendChild(contentWrapper);
-
     root.appendChild(createFooter());
 
     // 🔄 Dynamisk sidladdning
