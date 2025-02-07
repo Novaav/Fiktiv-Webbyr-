@@ -25,3 +25,4 @@ export function createFooter(): HTMLElement {
 
     return footer;
 }
+

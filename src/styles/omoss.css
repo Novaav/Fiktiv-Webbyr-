@@ -1,0 +1,117 @@
+
+
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 4rem; 
+    font-weight: 700; /* Fet stil */
+   
+}
+
+
+
+
+.about h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 15px; 
+}
+
+.about p {
+    font-size: 1.125rem;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.focus-areas {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #0077cc;
+    margin-bottom: 30px;
+}
+
+.lorem {
+    font-size: 1rem;
+    color: #666;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+.team {
+    padding: 50px 20px;
+}
+
+.team h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #222;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap; 
+}
+
+.team-member {
+    background: #fff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    width: 250px;
+    margin: 15px;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px); 
+}
+
+.team-member i {
+    color: #0077cc;
+    margin-bottom: 20px;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 1.125rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.team-member a {
+    font-size: 1rem;
+    color: #0077cc;
+    font-weight: 500;
+}
+
+
+@media (max-width: 768px) {
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .team-member {
+        width: 80%;
+    }
+}
