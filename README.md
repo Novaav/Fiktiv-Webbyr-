@@ -32,7 +32,6 @@ Utöver dessa har vi:
 - **Gör små commits**: En commit ska representera en logisk förändring.
 - **Undvik onödiga commits**: Slå ihop (squash) mindre commits innan push.
 - **Använd branches**: Skapa feature-branches istället för att commit’a direkt i `main`.
-- **Använd aldrig “WIP” (Work In Progress)**: Se till att varje commit är en färdig, fungerande enhet.
 
 Varje commit-meddelande ska följa konventionen:
 
@@ -95,6 +94,4 @@ La till en ny sektion för att kunder ska kunna kontakta oss direkt via webbsida
 - Använd **Git Flow** med `main` och `develop`
 - Följ commit-konventioner (`feat:`, `fix:`, osv.)
 - Skapa PRs med tydliga beskrivningar och tagga reviewers
-- Minst en godkänd review innan merge
 
- **Nu är vi redo att samarbeta effektivt på webbyrån!** 
