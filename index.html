@@ -1,15 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/styles/main.css">
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Välkommen till Winehouse Webbyrå</title>
+    <link rel="stylesheet" href="/src/styles/main.css">
+    <link rel="stylesheet" href="/src/styles/main.css">
+</head>
+<body>
+<div id="app">
+    <!-- 🌟 HERO-SEKTION MED VIDEO -->
+    <section class="hero">
+        <video autoplay muted loop class="hero-video">
+            <source src="/src/assets/videos/hero-bg.mp4" type="video/mp4">
+            Din webbläsare stödjer inte videouppspelning.
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Välkommen till Winehouse Webbyrå</h1>
+            <p>Vi bygger framtidens digitala upplevelser.</p>
+            <a href="varatjanster.html" class="cta-button">Se våra tjänster</a>
+        </div>
+    </section>
 
-    <title>Whinehouse Webbyrå</title>
-  </head>
-  <body>
-      <div id="app"></div> <!-- Lägg till detta -->
-    <script type="module" src="/src/main.ts"></script> 
-  </body>
+    <!-- 🏢 OM WEBBYRÅN -->
+    <section class="about">
+        <div class="container">
+            <h2>Om oss</h2>
+            <p>Winehouse Webbyrå är en kreativ digital byrå som hjälper företag att synas online. 
+               Med expertis inom webbdesign, utveckling och marknadsföring skapar vi digitala lösningar 
+               som engagerar och konverterar.</p>
+        </div>
+    </section>
+
+    <!-- 🚀 VÅRA TJÄNSTER -->
+    <section class="services">
+        <h2>Vad vi erbjuder</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <span class="service-icon">🌐</span>
+                <h3>Webbdesign</h3>
+                <p>Vi skapar moderna och stilrena webbplatser.</p>
+            </div>
+
+            <div class="service-card">
+                <span class="service-icon">💻</span>
+                <h3>Front-end utveckling</h3>
+                <p>Vi bygger responsiva och interaktiva gränssnitt.</p>
+            </div>
+
+            <div class="service-card">
+                <span class="service-icon">📈</span>
+                <h3>SEO & Marknadsföring</h3>
+                <p>Vi hjälper företag att synas och växa online.</p>
+            </div>
+        </div>
+    </section></div>
+
+    <script type="module" src="/src/main.ts"></script>
+</body>
 </html>
 
