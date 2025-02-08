@@ -25,3 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+export function init() {
+    console.log("Modul laddad!");
+  }
+  
