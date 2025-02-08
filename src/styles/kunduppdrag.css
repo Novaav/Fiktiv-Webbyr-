@@ -13,13 +13,16 @@
    🎨 KUNDUPPDRAG-SEKTION
    ========================== */
 .client-showcase {
-    background-color: #fff;
+    background-color: transparent;
     padding: 50px 0;
     text-align: center;
     font-size: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
 }
+
+
+
 
 .container {
     width: 100vw; 
@@ -29,6 +32,7 @@
     flex-wrap: wrap;
     justify-content: flex-start; 
     gap: 0; 
+    cursor: pointer;
    
 }
 
@@ -116,7 +120,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh; 
-    background: linear-gradient(45deg, #ff7f50, #ff1493, #1e90ff, #32cd32);
+    background: linear-gradient(45deg, #84a5bc, #2e384a, #c4c2c2, #000000);
     background-size: 400% 400%; 
     animation: gradientBackground 10s ease infinite; 
 }

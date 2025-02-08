@@ -14,7 +14,7 @@ html, body {
 
 
 .hero {
-    color: #333;
+    color: #ffffff;
     text-align: center;
     padding: 80px 20px;
     height: 50vh;
@@ -22,6 +22,7 @@ html, body {
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 100vw;
 }
 
 .hero h1 {
@@ -37,24 +38,29 @@ html, body {
     justify-content: space-around;
     align-items: center;
     padding: 40px 20px;
+    gap: 0px;
 }
 
 .info-box {
     padding: 30px;
-    width: 250px;
+    width: 400px;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 0px;
     border: 1px solid #000000; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    background-color: #1b617286;
+    color: white;
 }
 
 .info-box:hover {
     transform: translateY(-10px);
+    cursor: pointer;
+    transform: scale(1.2);
 }
 
 .info-box i {
-    color: #0f0f0f;
+    color: #ffffff;
     margin-bottom: 15px;
 }
 
@@ -66,19 +72,19 @@ html, body {
 
 .info-box p {
     font-size: 1rem;
-    color: #555;
+    color: #ffffff;
 }
 
 .phone {
     font-weight: 700;
-    color: #005fa3;
+    color: #ffffff;
 }
 
 /* Kontaktformulär */
 .contact-form {
     padding: 40px 20px;
     text-align: center;
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
@@ -86,7 +92,7 @@ html, body {
 .contact-form h1 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #222;
+    color: #010101;
     margin-bottom: 30px;
 }
 
@@ -99,7 +105,7 @@ html, body {
 .contact-form label {
     font-size: 1rem;
     font-weight: 600;
-    color: #555;
+    color: #000000;
     text-align: left;
 }
 
@@ -114,14 +120,14 @@ html, body {
 }
 
 .contact-form input:focus, .contact-form textarea:focus {
-    border-color: #0077cc;
+    border-color: #1b6172;
     outline: none;
 }
 
 .contact-form button {
     padding: 15px;
     font-size: 1.125rem;
-    background-color: #0077cc;
+    background-color: #000000;
     color: white;
     border: none;
     border-radius: 5px;
@@ -130,7 +136,8 @@ html, body {
 }
 
 .contact-form button:hover {
-    background-color: #005fa3;
+    background-color: #ffffff;
+    color:#000000;
 }
 
 .contact-form p {
