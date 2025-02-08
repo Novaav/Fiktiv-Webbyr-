@@ -1,0 +1,213 @@
+
+
+@import url('kunduppdrag.css');
+@import url('varatjanster.css');
+@import url('index.css');
+@import url('omoss.css');
+@import url('kontakt.css');
+
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden; /* Förhindra horisontell scroll */
+}
+
+/* ==========================
+   📏 SIDANS STRUKTUR
+   ========================== */
+   #app {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.content-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrerar innehållet vertikalt */
+    align-items: center; /* Centrerar innehållet horisontellt */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: calc(100vh - 120px); /* Se till att den tar upp hela höjden */
+}
+
+
+#kontakt {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.contact-form {
+    width: 40vw;
+}
+
+#animated-text {
+    color:white;
+}
+
+/* ==========================
+   🏠 HEADER & NAVIGATION
+   ========================== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 20px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    font-size: 42px;
+    font-weight: bolder;
+    color: black;
+    text-decoration: none; /* Tar bort understrykning */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* Navigationsmenyn */
+.navbar {
+    position: relative;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-list li {
+    display: inline;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: rgb(98, 145, 190);
+    font-size: larger;
+    text-decoration: underline;
+    border: #000000 1px;
+}
+
+/* Hamburgermeny */
+.menu-button {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* ==========================
+   🔻 FOOTER
+   ========================== */
+.footer {
+    background-color: #fffefe93;
+    color: #000000;
+    padding: 40px 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer p {
+    color: black;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-column h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin: 8px 0;
+
+}
+
+.footer-column ul li a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 16px;
+}
+
+.footer-column ul li a:hover {
+    color: #2e236e;
+}
+
+/* ==========================
+   📱 RESPONSIV DESIGN
+   ========================== */
+@media (max-width: 1024px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background: white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+    }
+
+    .nav-list.show {
+        display: flex;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+

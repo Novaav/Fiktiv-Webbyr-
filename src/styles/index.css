@@ -1,0 +1,176 @@
+
+
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: left;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    background: transparent;
+    padding: 10px;
+    border-radius: 0px;
+    margin: 0 auto;
+    text-align: left;
+    margin-left: 200px;
+
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+   color: white;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   transition: transform 0.3s ease-in-out;
+}
+
+.hero-content:hover {
+    transform: translateY(-5px);
+    font-stretch: extra-expanded;
+    cursor: pointer;
+}
+    
+
+.hero-content p {
+    font-size: 1.0rem;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+
+}
+
+.services {
+    text-align: center;
+    padding: 80px 20px;
+    background: rgba(33, 48, 82, 0);
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.service-grid {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 60px 20px;
+    border-radius: 0px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+    height: 400px; /* Anpassa höjden efter bilder */
+    display: flex;
+    gap: 0px;
+    flex-direction: column;
+    justify-content: flex-end; /* Flytta texten nedåt */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    font-weight: bolder;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.service-card h3, .service-card p {
+    background: rgba(0, 0, 0, 0.452);
+    padding: 10px;
+    border-radius: 0px;
+    color: rgb(188, 189, 190);
+}
+
+/* Specifika bilder för varje tjänst */
+.design {
+    background-image: url('/src/assets/images/bild5.png');
+}
+
+.frontend {
+    background-image: url('/src/assets/images/bild9.png');
+
+
+}
+
+.marketing {
+    background-image: url('/src/assets/images/amazon.png');
+}
+
+.service-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.service-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: #ff7f50;
+}
+
+h3 {
+    
+    font-size: 1.8rem;
+    color: black;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1rem;
+    color: black;
+    line-height: 1.6;
+    font-weight: lighter;
+}
+
+/* 📱 RESPONSIV DESIGN */
+@media (max-width: 1024px) {
+    .service-grid {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+}
+
+.container {
+    text-align: center;
+    margin: 50px;
+    align-items: center;
+}
+
+.about {
+    text-align: center;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 25px; /* Rundade hörn */
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+/* 🔥 Hover-effekt */
+.contact-button:hover {
+    background-color: black;
+    color: white;
+    border-color: rgb(255, 255, 255);
+}
