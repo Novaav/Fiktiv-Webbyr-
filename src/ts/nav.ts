@@ -38,3 +38,4 @@ export function createNavbar(): HTMLElement {
 
     return nav;
 }
+

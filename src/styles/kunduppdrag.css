@@ -2,7 +2,7 @@
    🏗️ KUNDUPPDRAG SIDSTYLING
    ========================== */
    .page-header {
-    text-align: center;
+    text-align: left;
     padding: 50px 0; 
     background-color: #ffffff;
     color: #000000;
@@ -15,15 +15,21 @@
 .client-showcase {
     background-color: transparent;
     padding: 50px 0;
-    text-align: center;
+    text-align: left;
     font-size: 2rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
+    
+    
 }
 
-
-
-
+#kundbeskr {
+    margin-left: 20px;
+    color: white;
+    padding-left: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
 .container {
     width: 100vw; 
     margin: 0; 

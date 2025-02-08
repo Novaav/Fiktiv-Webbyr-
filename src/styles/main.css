@@ -55,7 +55,12 @@ body {
 
 #animated-text {
     color:white;
+    text-align: left;
+    margin-left: 100px;
 }
+
+
+
 
 /* ==========================
    🏠 HEADER & NAVIGATION
@@ -90,10 +95,12 @@ body {
     padding: 0;
     margin: 0;
     display: flex;
+    gap: 1.5rem;
 }
 
 .nav-list li {
     display: inline;
+    position: relative;
 }
 
 .nav-list a {
@@ -101,14 +108,28 @@ body {
     color: black;
     font-size: 18px;
     padding: 10px 15px;
+    font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .nav-list a:hover {
-    color: rgb(98, 145, 190);
-    font-size: larger;
-    text-decoration: underline;
-    border: #000000 1px;
+    color: rgb(98, 145, 190); 
+}
+
+.nav-list a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(98, 145, 190);
+    transition: width 0.3s ease;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.nav-list a:hover::after {
+    width: 100%;
 }
 
 /* Hamburgermeny */
