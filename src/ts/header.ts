@@ -8,7 +8,7 @@ export function createHeader(): HTMLElement {
     const logoLink = document.createElement("a");
     logoLink.href = "index.html";
     logoLink.classList.add("logo");
-    logoLink.textContent = "Whinehouse .";
+    logoLink.textContent = "Winehouse .";
 
     const nav = createNavbar();
     

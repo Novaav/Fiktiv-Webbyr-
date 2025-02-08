@@ -46,17 +46,19 @@ html, body {
     width: 400px;
     text-align: center;
     border-radius: 0px;
-    border: 1px solid #000000; 
+    border: 2px solid #000000; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    background-color: #1b617286;
+    background: #2132536b;
     color: white;
+    
 }
 
 .info-box:hover {
     transform: translateY(-10px);
     cursor: pointer;
     transform: scale(1.2);
+    border: 5px solid #000000; 
 }
 
 .info-box i {
@@ -155,5 +157,17 @@ html, body {
     .info-box {
         width: 80%;
         margin-bottom: 20px;
+    }
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
     }
 }
