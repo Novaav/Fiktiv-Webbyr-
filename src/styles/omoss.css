@@ -103,6 +103,14 @@
 
 }
 
+#rosanna {
+    background-image: url('/src/assets/images/rosanna.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Flyttar texten längst ner */
+
+}
 
 .team-member:hover {
     transform: translateY(-10px); 
