@@ -44,6 +44,19 @@ body {
 }
 
 
+#kontakt {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.contact-form {
+    width: 40vw;
+}
+
+#animated-text {
+    color:white;
+}
+
 /* ==========================
    🏠 HEADER & NAVIGATION
    ========================== */
@@ -52,16 +65,20 @@ body {
     justify-content: space-between;
     align-items: center;
     background: white;
-    padding: 15px 20px;
+    padding: 20px 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .logo {
-    font-size: 36px;
-    font-weight: bold;
+    font-size: 42px;
+    font-weight: bolder;
     color: black;
     text-decoration: none; /* Tar bort understrykning */
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+
 
 /* Navigationsmenyn */
 .navbar {
@@ -88,7 +105,10 @@ body {
 }
 
 .nav-list a:hover {
-    color: gray;
+    color: rgb(98, 145, 190);
+    font-size: larger;
+    text-decoration: underline;
+    border: #000000 1px;
 }
 
 /* Hamburgermeny */
@@ -104,14 +124,17 @@ body {
    🔻 FOOTER
    ========================== */
 .footer {
-    background-color: #000;
-    color: #fff;
+    background-color: #fffefe93;
+    color: #000000;
     padding: 40px 20px;
     text-align: center;
     width: 100%;
     margin-top: auto;
 }
 
+.footer p {
+    color: black;
+}
 .footer-container {
     display: flex;
     justify-content: space-between;
@@ -132,7 +155,7 @@ body {
 .footer-column h3 {
     font-size: 20px;
     margin-bottom: 15px;
-    color: #fff;
+    color: #000000;
     text-transform: uppercase;
 }
 
@@ -144,17 +167,18 @@ body {
 
 .footer-column ul li {
     margin: 8px 0;
+
 }
 
 .footer-column ul li a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
     transition: color 0.3s ease;
     font-size: 16px;
 }
 
 .footer-column ul li a:hover {
-    color: #ddd;
+    color: #2e236e;
 }
 
 /* ==========================
