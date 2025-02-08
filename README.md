@@ -82,11 +82,10 @@ La till en ny sektion för att kunder ska kunna kontakta oss direkt via webbsida
 
 ---
 
-## Deployment-process
+## Release-process
 
 1. När `develop` är redo för release → Skapa en PR till `main`
 2. Efter merge till `main` → Skapa en **release-tag**
-3. Deploy till produktion sker efter godkänd QA-testning
 
 ---
 
@@ -94,9 +93,6 @@ La till en ny sektion för att kunder ska kunna kontakta oss direkt via webbsida
 - Använd **Git Flow** med `main` och `develop`
 - Följ commit-konventioner (`feat:`, `fix:`, osv.)
 - Skapa PRs med tydliga beskrivningar och tagga reviewers
-- 
-
-
 
 ---
 
